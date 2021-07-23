@@ -27,7 +27,7 @@ def gray_scale():
    return imgB
 
 def OCR():
-   global lenguage,path
+   global lenguage,path,layout
    os.environ['PATH'] += os.pathsep + path
    tools = pyocr.get_available_tools()
    pyocr.tesseract.TESSERACT_CMD = path+'\\tesseract.exe'
@@ -36,7 +36,7 @@ def OCR():
 
    img = gray_scale()
    
-   builder = pyocr.builders.TextBuilder(tesseract_layout=6)
+   builder = pyocr.builders.TextBuilder(tesseract_layout=layout)
    text = tool.image_to_string(img, lang=lenguage, builder=builder)
    print(text)
    pyperclip.copy(text.replace(' ',''))
@@ -159,8 +159,7 @@ def exit_p():
    os._exit(0)
    
 def main():
-   global border,border_max,border_min,toolbox_h,toolbox_w,lenguage,path
-
+   global border,border_max,border_min,toolbox_h,toolbox_w,lenguage,path,layout
    config = configparser.ConfigParser()
    config.read('config.ini')
    
@@ -171,7 +170,9 @@ def main():
    toolbox_w = int(config['toolbox']['width'])
    lenguage = config['lenguage']['code']
    path = config['engine']['path']
+   layout = int(config['engine']['layout'])
    
+   #print(lenguage)
    keyboard.add_hotkey('shift+esc', exit_p)
    keyboard.add_hotkey('print screen', creat)
 
