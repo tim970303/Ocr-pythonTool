@@ -9,3 +9,5 @@ Double click the orc_ver1.2.exe in the orc_ver1.2 folder
   * You can drag the small preview image to look around and drag the scale to adjust the threshold  
 * Esc -> leave  
 * shift+esc -> close the program  
+
+> Highly not recommant use jpn_vert
