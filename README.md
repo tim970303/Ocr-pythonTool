@@ -2,7 +2,7 @@
 After install tesseract ,copy the file under traindata into your install path  
 
 ## How to use
-Double click the orc_ver1.2.exe in the orc_ver1.2 folder  
+Double click the ocr_ver1.2.exe in the ocr_ver1.2 folder  
 * PrtSc -> strat  
   * Left click and drag to select area  
   * Right-click to start OCR  
