@@ -10,4 +10,4 @@ Double click the ocr_ver1.2.exe in the ocr_ver1.2 folder
 * Esc -> leave  
 * shift+esc -> close the program  
 
-> Highly not recommant use jpn_vert
+> Highly recommend not using jpn_vert
