@@ -1,5 +1,5 @@
 ## Install
-After install tesseract ,copy the file under traindata into your install path  
+To be able to use this, you need to install tesseract-ocr, if the effect is not good enough for you, you can try to find a better traindata, it's easy to find using google/github.
 
 ## How to use
 Double click the ocr_ver1.2.exe in the ocr_ver1.2 folder  
